@@ -32,7 +32,7 @@ TARGET		:=	swapdrc
 BUILD		:=	build
 BUILD_DBG	:=	$(TARGET)_dbg
 SOURCES		:=	src \
-				src/dynamic_libs \
+				src/dynamic_libs/source \
 				src/fs \
 				src/game \
 				src/kernel \

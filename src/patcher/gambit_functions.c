@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include <string.h>
-#include "dynamic_libs/vpad_functions.h"
+#include "dynamic_libs/source/vpad_functions.h"
 #include "patcher/vpad_function_patcher.h"
 #include "retain_vars.h"
 #include "utils/logger.h"

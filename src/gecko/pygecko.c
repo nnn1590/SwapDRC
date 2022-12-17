@@ -1,14 +1,14 @@
 #include <string.h>
 #include <malloc.h>
 #include "common/common.h"
-#include "dynamic_libs/os_functions.h"
-#include "dynamic_libs/socket_functions.h"
-#include "dynamic_libs/gx2_functions.h"
+#include "dynamic_libs/source/os_functions.h"
+#include "dynamic_libs/source/socket_functions.h"
+#include "dynamic_libs/source/gx2_functions.h"
 #include "kernel/syscalls.h"
 
 struct pygecko_bss_t {
 	int error, line;
-	void* thread;
+	OSThread* thread;
 	unsigned char stack[0x8000];
 };
 
@@ -388,9 +388,9 @@ void start_pygecko(void)
 		return;
 	memset(bss, 0, sizeof(struct pygecko_bss_t));
 
-	if(OSCreateThread(&bss->thread, pygecko_main, 1, bss, (u32)bss->stack + sizeof(bss->stack), sizeof(bss->stack), 0, 0x1C) == 1)
+	if(OSCreateThread(bss->thread, pygecko_main, 1, bss, (u32)bss->stack + sizeof(bss->stack), sizeof(bss->stack), 0, 0x1C) == 1)
     {
-        OSResumeThread(&bss->thread);
+        OSResumeThread(bss->thread);
     }
     else
     {

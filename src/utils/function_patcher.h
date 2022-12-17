@@ -26,18 +26,18 @@ extern "C" {
 
 #include <gctypes.h>
 #include "common/common.h"
-#include "dynamic_libs/aoc_functions.h"
-#include "dynamic_libs/ax_functions.h"
-#include "dynamic_libs/fs_functions.h"
-#include "dynamic_libs/gx2_functions.h"
-#include "dynamic_libs/os_functions.h"
-#include "dynamic_libs/padscore_functions.h"
-#include "dynamic_libs/socket_functions.h"
-#include "dynamic_libs/sys_functions.h"
-#include "dynamic_libs/vpad_functions.h"
-#include "dynamic_libs/acp_functions.h"
-#include "dynamic_libs/syshid_functions.h"
-#include "dynamic_libs/proc_ui_functions.h"
+#include "dynamic_libs/source/aoc_functions.h"
+#include "dynamic_libs/source/ax_functions.h"
+#include "dynamic_libs/source/fs_functions.h"
+#include "dynamic_libs/source/gx2_functions.h"
+#include "dynamic_libs/source/os_functions.h"
+#include "dynamic_libs/source/padscore_functions.h"
+#include "dynamic_libs/source/socket_functions.h"
+#include "dynamic_libs/source/sys_functions.h"
+#include "dynamic_libs/source/vpad_functions.h"
+#include "dynamic_libs/source/acp_functions.h"
+#include "dynamic_libs/source/syshid_functions.h"
+#include "dynamic_libs/source/proc_ui_functions.h"
 
 //Orignal code by Chadderz.
 #define DECL(res, name, ...) \

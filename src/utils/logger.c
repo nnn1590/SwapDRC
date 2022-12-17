@@ -4,8 +4,8 @@
 #include <string.h>
 #include <errno.h>
 #include "common/common.h"
-#include "dynamic_libs/os_functions.h"
-#include "dynamic_libs/socket_functions.h"
+#include "dynamic_libs/source/os_functions.h"
+#include "dynamic_libs/source/socket_functions.h"
 #include "logger.h"
 
 #ifdef DEBUG_LOGGER

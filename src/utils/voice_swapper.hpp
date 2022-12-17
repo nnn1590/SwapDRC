@@ -22,7 +22,7 @@
 
 #include "utils/logger.h"
 
-#include "dynamic_libs/os_functions.h"
+#include "dynamic_libs/source/os_functions.h"
 #include <stdio.h>
 #include <string.h>
 
